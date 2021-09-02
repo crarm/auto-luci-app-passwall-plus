@@ -1,12 +1,13 @@
 name: x86_64
 
 on:
-  #push:
-    #branches: [ master ]
-  #pull_request:
-    #branches: [ master ]
-  watch:
-    types: started
+  repository_dispatch:
+  workflow_dispatch:
+    inputs:
+      ssh:
+        description: 'SSH connection to Actions'
+        required: false
+        default: 'false'
   #schedule:
     #- cron:  '0 0 28-31 * *'
 
