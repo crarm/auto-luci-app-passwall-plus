@@ -18,7 +18,7 @@ jobs:
     if: github.event.repository.owner.id == github.event.sender.id
     
     env:
-      URL: https://downloads.openwrt.org/snapshots/targets/x86/64/openwrt-sdk-x86-64_gcc-8.4.0_musl.Linux-x86_64.tar.xz #需要修改
+      URL: https://downloads.openwrt.org/snapshots/targets/x86/64/openwrt-sdk-x86-64_gcc-10.3.0_musl.Linux-x86_64.tar.xz #需要修改
 
     
     steps:
